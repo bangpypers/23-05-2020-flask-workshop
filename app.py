@@ -125,4 +125,12 @@ class Movie(db.Model):
     id_ = db.Column("id", db.Integer, primary_key=True)
     title = db.Column(db.String(512), nullable=False)
 
+    def __init__(self, title):
+        """Initializer"""
+        self.title = title
+
+    def __repr__(self):
+        return "<Movie: #{} - {}>".format(self.id_, self.name)
+
+
 app.run(debug=True)
