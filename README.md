@@ -60,7 +60,7 @@ to rewind to older states of the application.
 To rewind the app to a specific tag, use the following command:
 
 ```bash
-git checkout v1.1
+git checkout v0.1
 ```
 
 You can feel free to make changes or play around with the application.
@@ -70,10 +70,24 @@ You can feel free to make changes or play around with the application.
 Just checkout a later commit:
 
 ```bash
-git checkout v1.9
+git checkout v0.9
 ```
 
 The decimal portion of the application version will correspond to the agenda.
+
+
+## Running the App
+
+In v0.1.1, the way you run the app is a very simple operation.
+
+```bash
+# first, learn about decorators
+python decorators.py
+# then continue to the app.
+python app.py
+```
+
+Open [this page](http://localhost:5000) on your browser.
 
 
 ## Reading the source code:
