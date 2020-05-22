@@ -1,6 +1,5 @@
 #/usr/bin/env python3
 
-
 from flask import (
     Flask, render_template, request, jsonify
     )
@@ -66,5 +65,18 @@ def get_json():
     }
     return jsonify(response)
 
+
+@app.route("/post-example", methods=["POST"])
+def post_example():
+    """This is an example for post"""
+    # print is an ugly function to use to debug something.
+    # app.logger is a nice logger you get with Flask itself.
+    response = {
+        "success": True,
+        "some_number": 34298,
+        "null_value": None,
+        "string_sample": "flask is fun!"
+    }
+    return jsonify(response)
 
 app.run(debug=True)
