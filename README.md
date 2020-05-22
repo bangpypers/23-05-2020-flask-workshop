@@ -6,7 +6,7 @@ is Django, which follows a batteries-included approach. Flask follows the
 opposite approach.
 
 Flask can be used to build many things, from complex web applications to IoT
-projects such as the speaker's [Speaking Bookshelf](https://youtu.be/aEYftBZz6ag).
+projects such as the trainer's [Speaking Bookshelf](https://youtu.be/aEYftBZz6ag).
 
 ## About the Instructor
 
