@@ -236,6 +236,98 @@ In postman:
 ![Post](screenshots/01_post.png)
 
 
+#### Multiple Method Routes
+
+You can have combined routes by using the `methods` argument to `@app.route`.
+This enables you to use `request.method` to change the behaviour of your
+API based on how users are using it.
+
+Test it out.
+
+##### GET
+```bash
+http GET :5000/combined-example
+```
+
+Output:
+```
+HTTP/1.0 200 OK
+Content-Length: 82
+Content-Type: application/json
+Date: Fri, 22 May 2020 18:13:15 GMT
+Server: Werkzeug/1.0.1 Python/3.8.3
+
+{
+    "message": "You got what you asked for.",
+    "number": 1,
+    "sucess": true
+}
+```
+
+##### POST
+
+```bash
+http POST :5000/combined-example id=10
+```
+
+Output:
+
+```
+HTTP/1.0 200 OK
+Content-Length: 91
+Content-Type: application/json
+Date: Fri, 22 May 2020 18:13:39 GMT
+Server: Werkzeug/1.0.1 Python/3.8.3
+
+{
+    "id": "10",
+    "message": "You posted something",
+    "number": 2,
+    "success": true
+}
+```
+
+##### PUT
+```bash
+http PUT :5000/combined-example id=13
+```
+
+Output:
+```
+HTTP/1.0 200 OK
+Content-Length: 93
+Content-Type: application/json
+Date: Fri, 22 May 2020 18:14:27 GMT
+Server: Werkzeug/1.0.1 Python/3.8.3
+
+{
+    "id": "13",
+    "message": "You put something here",
+    "number": 2,
+    "success": true
+}
+```
+
+##### DELETE
+```bash
+http DELETE :5000/combined-example id=92
+```
+
+Output:
+```
+HTTP/1.0 200 OK
+Content-Length: 92
+Content-Type: application/json
+Date: Fri, 22 May 2020 18:15:25 GMT
+Server: Werkzeug/1.0.1 Python/3.8.3
+
+{
+    "id": "92",
+    "message": "You deleted something",
+    "number": 2,
+    "success": true
+}```
+
 ### Data in routes
 
 Routes sometimes have meaningful data in them. A good analogy is to think
