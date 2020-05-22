@@ -246,7 +246,7 @@ Test it out.
 
 ##### GET
 ```bash
-http GET :5000/combined-example
+http GET :5000/combined-example -f
 ```
 
 Output:
@@ -267,7 +267,7 @@ Server: Werkzeug/1.0.1 Python/3.8.3
 ##### POST
 
 ```bash
-http POST :5000/combined-example id=10
+http POST :5000/combined-example id=10 -f
 ```
 
 Output:
@@ -289,7 +289,7 @@ Server: Werkzeug/1.0.1 Python/3.8.3
 
 ##### PUT
 ```bash
-http PUT :5000/combined-example id=13
+http PUT :5000/combined-example id=123 -f
 ```
 
 Output:
@@ -301,16 +301,18 @@ Date: Fri, 22 May 2020 18:14:27 GMT
 Server: Werkzeug/1.0.1 Python/3.8.3
 
 {
-    "id": "13",
+    "id": "123",
     "message": "You put something here",
     "number": 2,
     "success": true
 }
 ```
+In Postman:
 
+![Send formdata](screenshots/02_form_data.png)
 ##### DELETE
 ```bash
-http DELETE :5000/combined-example id=92
+http DELETE :5000/combined-example id=92 -f
 ```
 
 Output:
