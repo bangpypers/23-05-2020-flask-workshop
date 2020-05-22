@@ -122,8 +122,7 @@ db = SQLAlchemy(app=app)
 
 class Movie(db.Model):
     __tablename__ = "movies"
-    id_ = db.Column(db.Integer, primary_key=True)
+    id_ = db.Column("id", db.Integer, primary_key=True)
     title = db.Column(db.String(512), nullable=False)
-
 
 app.run(debug=True)
