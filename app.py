@@ -1,7 +1,7 @@
 #/usr/bin/env python3
 
 
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
@@ -9,19 +9,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    """This will give you the 'home' page"""
-    return """<html>
-    <head>
-    <title>flask application</title>
-    </head>
-    <body>
-    <h1>Hello, world!</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Vel, quaerat est! Nemo laudantium explicabo eligendi alias ea facilis
-    autem aspernatur accusamus architecto consectetur impedit, beatae
-    reprehenderit neque est ipsum dolor.
-    </p></body>
-    </html>"""
+    """As you can see, the practise of returning html as a string
+    is a hack at best, and gives you more pain than you can concern yourself
+    with.
+    Luckily, flask has options."""
+    return render_template("home.html")
 
 
 app.run(debug=True)
