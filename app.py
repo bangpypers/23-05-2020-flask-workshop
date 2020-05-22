@@ -3,6 +3,7 @@ from flask import (
     Flask, render_template, request, jsonify
     )
 
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
@@ -113,6 +114,16 @@ def combined_route():
            "id": payload,
        }
     return jsonify(response)
+
+
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///workshop.db"
+db = SQLAlchemy(app=app)
+
+
+class Movie(db.Model):
+    __tablename__ = "movies"
+    id_ = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(512), nullable=False)
 
 
 app.run(debug=True)
