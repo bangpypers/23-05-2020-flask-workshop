@@ -456,6 +456,22 @@ You can add and create your own flask commands. Check out app.py and the
 section using `app.cli` for more. See tag v0.8.2.
 
 
+## Building and Running the Dockerfile
+
+As a bonus I have included a dockerfile for this application.
+
+To build:
+
+```bash
+docker build -t workshop .
+```
+
+To run:
+
+```bash
+docker run --rm --name workshop -p 5000:5000 workshop
+```
+
 ## Free Resources
 
 1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
