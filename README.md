@@ -28,8 +28,7 @@ will be published by Apress around December 2020.
     1. GET and queries
     2. Using Postman
     3. POST
-    4. PUT
-    5. DELETE
+    4. PUT, DELETE
 3. Debugging with VS Code.
     1. Adding a `launch.json` file
 4. Adding a Database
