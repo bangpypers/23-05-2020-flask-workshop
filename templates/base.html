@@ -1,6 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Flask Application</title>
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='bootstrap-3.3.7-dist/css/bootstrap.min.css') }}" rel="stylesheet">
+
 </head>
 <body>
     {% block content %}
@@ -9,5 +17,9 @@
     languages that allow you to make front ends this way.
     #}
     {% endblock %}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ url_for('static', filename='bootstrap-3.3.7-dist/js/jquery_1.12.3.min.js')}}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ url_for('static', filename='bootstrap-3.3.7-dist/js/bootstrap.min.js')}}"></script>
 </body>
 </html>
