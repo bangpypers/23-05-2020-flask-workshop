@@ -40,4 +40,9 @@ def create_app(config=None, config_file=None):
         load_data(movies)
         app.logger.debug("Movies loaded from {}".format(movies))
 
+    from .extensions import admin
+    from flask_admin.contrib.sqla import ModelView
+    admin.init_app(app)
+    admin.add_view(ModelView(User, db.session))
+    admin.add_view(ModelView(Movie, db.session))
     return app
