@@ -53,11 +53,7 @@ will be published by Apress around December 2020.
     3. Add a flask extension: `flask-admin`
     4. Home page
     5. Movie display page.
-    6. Adding javascript for `onClick`
-    7. Adding a \user\selected page to display all the selections
-    8. Running with gunicorn (linux and mac only)
-    9. Writing tests with pytest-flask
-    10. [BONUS] Dockerfile!
+    6. [BONUS] Dockerfile!
 
 
 ## Installation
