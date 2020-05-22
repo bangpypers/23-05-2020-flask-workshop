@@ -308,7 +308,9 @@ Server: Werkzeug/1.0.1 Python/3.8.3
 In Postman:
 
 ![Send formdata](screenshots/02_form_data.png)
+
 ##### DELETE
+
 ```bash
 http DELETE :5000/combined-example id=92 -f
 ```
@@ -326,7 +328,8 @@ Server: Werkzeug/1.0.1 Python/3.8.3
     "message": "You deleted something",
     "number": 2,
     "success": true
-}```
+}
+```
 
 ### Data in routes
 
@@ -362,7 +365,21 @@ as an accessible string.
 
 The [Official docs for VS Code](https://code.visualstudio.com/docs/python/tutorial-flask#_run-the-app-in-the-debugger) cover how to use the debugger nicely.
 
+## Adding a Database
 
+An application most often needs a database. Adding one with `flask_sqlalchemy`
+is simple.
+
+Once you make the changes that are in v0.4.2, make sure to run the following:
+
+```bash
+export FLASK_APP=app.py
+export FLASK_DEBUG=1
+flask shell
+>>> from app import db
+>>> db.create_all()
+# This creates the database.
+```
 ## Free Resources
 
 1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
