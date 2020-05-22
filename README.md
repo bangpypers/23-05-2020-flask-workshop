@@ -161,6 +161,14 @@ Server: Werkzeug/1.0.1 Python/3.8.3
 }
 ```
 
+## Using Postman to Test the API
+
+Sometimes it is easier to use a GUI to
+check your API. Postman is one such app for this.
+
+![Postman Image](screenshots/00_postman.png)
+
+
 ## Reading the source code:
 
 The easiest way to read the final application is from the `app.py` file. The
