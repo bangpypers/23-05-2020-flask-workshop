@@ -25,12 +25,11 @@ will be published by Apress around December 2020.
     4. Add a second page.
     5. Modularize both pages.
 2. Routes
-    1. Routes and JSONs
-    2. GET
-    3. Using Postman
-    4. POST
-    5. PUT
-    6. DELETE
+    1. GET and queries
+    2. Using Postman
+    3. POST
+    4. PUT
+    5. DELETE
 3. Debugging with VS Code.
     1. Adding a `launch.json` file
 4. Adding a Database
@@ -131,6 +130,36 @@ FLASK_APP=app.py FLASK_DEBUG=1 flask run
 Open [this page](http://localhost:5000) on your browser.
 
 To check out the search URL, try this [page](http://localhost:5000/search?query=pink+socks).
+
+### Trying httpie to test the API
+
+You can use the `http` command to test the API.
+
+```bash
+http http://localhost:5000/json-example
+```
+Note: Ensure you have installed httpie using:
+
+```bash
+pip install -r requirements.txt
+```
+
+
+The output I get is:
+```
+HTTP/1.0 200 OK
+Content-Length: 96
+Content-Type: application/json
+Date: Fri, 22 May 2020 17:26:39 GMT
+Server: Werkzeug/1.0.1 Python/3.8.3
+
+{
+    "animal": "Cat",
+    "name": "John Doe",
+    "place": "Amsterdam",
+    "thing": "Volleyball"
+}
+```
 
 ## Reading the source code:
 
