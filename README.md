@@ -32,9 +32,8 @@ will be published by Apress around December 2020.
 3. Debugging with VS Code.
     1. Adding a `launch.json` file
 4. Adding a Database
-    1. flask-sqlalchemy
-    2. db.Model example table
-    3. Adding a second table.
+    1. flask_sqlalchemy: db.Model example table
+    2. Adding a second table.
 5. Flask shell
     1. Using flask-shell to debug.
     2. Adding values to the database.
