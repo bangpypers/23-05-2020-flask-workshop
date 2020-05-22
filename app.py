@@ -79,4 +79,40 @@ def post_example():
     }
     return jsonify(response)
 
+
+@app.route("/combined-example", methods=["GET", "POST", "PUT", "DELETE"])
+def combined_route():
+    """You can also combine routes"""
+    if request.method == "GET":
+        response = {
+            "message": "You got what you asked for.",
+            "sucess": True,
+            "number": 1,
+        }
+    else:
+        payload = request.json.get("id")
+        if request.method == "POST":
+            response = {
+           "message": "You posted something",
+           "success": True,
+           "number": 2,
+           "id": payload,
+       }
+        elif request.method == "PUT":
+            response = {
+           "message": "You put something here",
+           "success": True,
+           "number": 2,
+           "id": payload,
+       }
+        else:
+            response = {
+           "message": "You deleted something",
+           "success": True,
+           "number": 2,
+           "id": payload,
+       }
+    return jsonify(response)
+
+
 app.run(debug=True)
