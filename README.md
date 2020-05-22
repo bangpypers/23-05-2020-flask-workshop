@@ -437,6 +437,22 @@ and used.
 
 Check `workshop/blueprints` for more info.
 
+
+## API Design with Stoplight Studio
+
+Stoplight studio is a great way to chart out an API before you begin
+work on it.
+
+You can design the API and then export a swagger file that tells other
+developers how you wanted to design the API at a later point.
+
+Here are some screenshots.
+
+![Stoplight-1](screenshots/05_stoplight.png)
+![Stoplight-2](screenshots/05_stoplight_endpoint.png)
+
+Take a look at the `swagger.yml` file to know more.
+
 ## Free Resources
 
 1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
