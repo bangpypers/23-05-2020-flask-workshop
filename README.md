@@ -237,7 +237,7 @@ as an accessible string.
 2. [Flask Mega-tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 3. [Explore Flask](http://exploreflask.com/en/latest/)
 4. Git Tutorial [videos](https://git-scm.com/videos) [Pro-Git Book](https://git-scm.com/book/en/v2)
-5. Automate the Boring Stuff
+5. [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 6. [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/)
 7. [SQL Tutorial on Postgres Documentation](https://www.postgresql.org/docs/10/tutorial.html)
 8. [Postman](https://www.postman.com/)
