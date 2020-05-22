@@ -15,5 +15,9 @@ def index():
     Luckily, flask has options."""
     return render_template("home.html")
 
+@app.route("/about")
+def about_page():
+    """Render the about page when the url is entered."""
+    return render_template("about.html")
 
 app.run(debug=True)
