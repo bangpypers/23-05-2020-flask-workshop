@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content%}
-    <h1>Add Movie Page</h1>
+    <h1>Movie Page</h1>
     <form method="POST" role="form">
         <div class="form-group">
           <label for="title">Movie Title</label>
@@ -9,4 +9,13 @@
         </div>
         <button type="submit" class="btn btn-primary">Add</button>
       </form>
+      <br />
+      <div>
+        <ul class="list-group">
+          {% for movie in movies%}
+          <li class="list-group-item">#{{ movie.id_ }} - {{ movie.title }}</li>
+          {%endfor%}
+        </ul>
+      </div>
+
 {% endblock%}

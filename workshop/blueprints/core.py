@@ -37,96 +37,47 @@ def search_page():
     return render_template("search.html", query=query)
 
 
-@core.route("/json-example", methods=["GET"])
-def get_json():
-    """This returns a JSON, a Javascript Object Notation value
-
-    Test it out with httpie:
-
-        $ http http://localhost:5000/json-example
-
-        HTTP/1.0 200 OK
-        Content-Length: 96
-        Content-Type: application/json
-        Date: Fri, 22 May 2020 17:26:39 GMT
-        Server: Werkzeug/1.0.1 Python/3.8.3
-
-        {
-            "animal": "Cat",
-            "name": "John Doe",
-            "place": "Amsterdam",
-            "thing": "Volleyball"
-        }
-    """
-    response = {
-        "name": "John Doe",
-        "place": "Amsterdam",
-        "animal": "Cat",
-        "thing": "Volleyball"
-    }
-    return jsonify(response)
-
-
-@core.route("/post-example", methods=["POST"])
-def post_example():
-    """This is an example for post"""
-    # print is an ugly function to use to debug something.
-    # app.logger is a nice logger you get with Flask itself.
-    response = {
-        "success": True,
-        "some_number": 34298,
-        "null_value": None,
-        "string_sample": "flask is fun!"
-    }
-    return jsonify(response)
-
-
-@core.route("/combined-example", methods=["GET", "POST", "PUT", "DELETE"])
-def combined_route():
-    """You can also combine routes"""
-    if request.method == "GET":
-        response = {
-            "message": "You got what you asked for.",
-            "sucess": True,
-            "number": 1,
-        }
-    else:
-        payload = request.form.get("id")
-        if request.method == "POST":
-            response = {
-        "message": "You posted something",
-        "success": True,
-        "number": 2,
-        "id": payload,
-    }
-        elif request.method == "PUT":
-            response = {
-        "message": "You put something here",
-        "success": True,
-        "number": 2,
-        "id": payload,
-    }
-        else:
-            response = {
-        "message": "You deleted something",
-        "success": True,
-        "number": 2,
-        "id": payload,
-    }
-    return jsonify(response)
-
-@core.route("/add", methods=["GET", "POST"])
+@core.route("/movies", methods=["GET", "POST", "PUT", "DELETE"])
 def add_movie():
     """route to add movie"""
-    if request.method == "GET":
-        return render_template("add.html")
+    if request.method =="GET":
+        movies = Movie.query.all()
+        return render_template(
+            "movies.html", movies=movies)
     else:
-        title = request.form.get("title")
-        movie = Movie(title=title)
-        db.session.add(movie)
-        db.session.commit()
-        response = {
-            "success": True,
-            "id": movie.id_
-        }
-        return jsonify(response)
+        if request.method == "PUT":
+            title = request.form.get("title")
+            movie = Movie.query.filter(Movie.title == title).first()
+            if movie is None:
+                movie = Movie(title=title)
+                db.session.add(movie)
+                db.session.commit()
+                added = True
+            else:
+                added = False
+            response = {
+                "added": added,
+                "id": movie.id_
+            }
+            return jsonify(response)
+        elif request.method == "POST":
+            id_ = request.form.get("id")
+            title = request.form.get("title")
+            movie = Movie.query.filter(Movie.id_ == id_).first_or_404()
+            movie.title = title
+            db.session.commit()
+            response = {
+                "updated": True,
+                "id": movie.id_
+            }
+            return jsonify(response)
+        else:
+            title = request.form.get("title")
+            movie = Movie.query.filter(Movie.title == title).first_or_404()
+            db.session.delete(movie)
+            db.session.commit()
+            response = {
+                "deleted": True,
+                "id": movie.id_
+            }
+            return jsonify(response)
