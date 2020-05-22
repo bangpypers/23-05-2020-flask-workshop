@@ -453,6 +453,13 @@ Here are some screenshots.
 
 Take a look at the `swagger.yml` file to know more.
 
+
+## Flask Commands
+
+You can add and create your own flask commands. Check out app.py and the
+section using `app.cli` for more. See tag v0.8.2.
+
+
 ## Free Resources
 
 1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
