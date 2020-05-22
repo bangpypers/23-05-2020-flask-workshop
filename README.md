@@ -45,7 +45,7 @@ will be published by Apress around December 2020.
     3. A simple form.
 7. Flask Modularization
     1. moving files.
-    2. loading database later.
+    2. blueprints
     3. logging
 8. Creating an Application
     1. Home page
