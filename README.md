@@ -48,18 +48,16 @@ will be published by Apress around December 2020.
     2. blueprints
     3. logging to a file
 8. Creating an Application
-    1. Home page
-    2. Designing the API with Stoplight Studio
-    3. Adding tables.
-    4. Adding API routes
-    5. Adding helper command to `flask` CLI to load data.
-    6. Movie display page.
-    7. Adding javascript for `onClick`
-    8. Adding a \user\selected page to display all the selections
-    9. Logging to a file
-    10. Running with gunicorn (linux and mac only)
-    11. Writing tests with pytest-flask
-    12. [BONUS] Dockerfile!
+    1. Designing the API with Stoplight Studio
+    2. Adding helper command to `flask` CLI to load data.
+    3. Add a flask extension: `flask-admin`
+    4. Home page
+    5. Movie display page.
+    6. Adding javascript for `onClick`
+    7. Adding a \user\selected page to display all the selections
+    8. Running with gunicorn (linux and mac only)
+    9. Writing tests with pytest-flask
+    10. [BONUS] Dockerfile!
 
 
 ## Installation
