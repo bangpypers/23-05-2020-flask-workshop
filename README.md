@@ -117,12 +117,15 @@ The decimal portion of the application version will correspond to the agenda.
 
 ## Running the App
 
-In v0.2.x, the way you run the app is a very simple operation.
+From v0.4.x, the way you run the app is a very simple operation.
 
 ```bash
-python app.py
-# OR
-FLASK_APP=app.py FLASK_DEBUG=1 flask run
+
+export FLASK_APP=app.py
+export FLASK_DEBUG=1
+# windows users,
+# use SET instead of EXPORT
+flask run
 ```
 
 Open [this page](http://localhost:5000) on your browser.
@@ -380,6 +383,8 @@ flask shell
 >>> db.create_all()
 # This creates the database.
 ```
+
+
 ## Free Resources
 
 1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
