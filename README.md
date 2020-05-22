@@ -120,7 +120,7 @@ The decimal portion of the application version will correspond to the agenda.
 
 ## Running the App
 
-In v0.1.x, the way you run the app is a very simple operation.
+In v0.2.x, the way you run the app is a very simple operation.
 
 ```bash
 python app.py
@@ -130,6 +130,7 @@ FLASK_APP=app.py FLASK_DEBUG=1 flask run
 
 Open [this page](http://localhost:5000) on your browser.
 
+To check out the search URL, try this [page](http://localhost:5000/search?query=pink+socks).
 
 ## Reading the source code:
 
