@@ -5,6 +5,7 @@ from .models.movies import Movie
 def load_data(file_path):
     """Helper function to load data using flask shell"""
     import csv
+    db.create_all()
     with open(file_path) as f:
         reader = csv.DictReader(f)
         for row in reader:
