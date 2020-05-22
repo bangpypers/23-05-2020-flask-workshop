@@ -130,7 +130,7 @@ class Movie(db.Model):
         self.title = title
 
     def __repr__(self):
-        return "<Movie: #{} - {}>".format(self.id_, self.name)
+        return "<Movie: #{} - {}>".format(self.id_, self.title)
 
 
 app.run(debug=True)
