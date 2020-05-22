@@ -232,6 +232,10 @@ Server: Werkzeug/1.0.1 Python/3.8.3
 }
 ```
 
+In postman:
+
+![Post](screenshots/01_post.png)
+
 
 ### Data in routes
 
