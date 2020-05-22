@@ -1,5 +1,9 @@
 from flask import Blueprint, jsonify, render_template, request
 
+from workshop.models import db
+from workshop.models.movies import Movie
+from workshop.models.users import User
+
 core = Blueprint(__name__, "core")
 
 
