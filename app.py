@@ -13,6 +13,7 @@ def index():
     is a hack at best, and gives you more pain than you can concern yourself
     with.
     Luckily, flask has options."""
+
     return render_template("home.html")
 
 @app.route("/about")
