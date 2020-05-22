@@ -18,8 +18,6 @@ will be published by Apress around December 2020.
 
 ## Agenda
 
-
-
 1. Quick Introduction to Decorators
 2. Introduction to Flask
 3. Adding Routes
