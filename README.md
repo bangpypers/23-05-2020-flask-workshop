@@ -429,6 +429,16 @@ it up so that your logic becomes easier to debug.
 The `v0.7.x` tags show how to split the previous application into several
 modules.
 
+### Blueprints
+
+In Flask, blueprints are a modular way of seggregating the API. A blueprint
+behaves like a regular flask app, but it does not run until it is attached
+to a flask application. The reason we use a blueprint is so that if the app
+has to be used in another application, then it can be easily imported there
+and used.
+
+Check `workshop/blueprints` for more info.
+
 ## Free Resources
 
 1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
