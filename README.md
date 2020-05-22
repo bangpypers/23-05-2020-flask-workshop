@@ -78,7 +78,7 @@ The decimal portion of the application version will correspond to the agenda.
 
 ## Running the App
 
-In v0.1.2, the way you run the app is a very simple operation.
+In v0.1.3, the way you run the app is a very simple operation.
 
 ```bash
 python app.py
