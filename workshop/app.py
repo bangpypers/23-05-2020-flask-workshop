@@ -28,4 +28,7 @@ def create_app(config=None, config_file=None):
 
     app.register_blueprint(core)
 
+    from .logger import setup_logging
+    setup_logging(app)
+    app.logger.info("app configured.")
     return app

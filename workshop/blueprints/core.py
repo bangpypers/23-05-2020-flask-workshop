@@ -9,7 +9,8 @@ def index():
     is a hack at best, and gives you more pain than you can concern yourself
     with.
     Luckily, flask has options."""
-
+    from flask import current_app
+    current_app.logger.debug("Reached the index")
     return render_template("home.html")
 
 @core.route("/about")
