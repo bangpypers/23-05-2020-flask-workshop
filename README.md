@@ -46,7 +46,7 @@ will be published by Apress around December 2020.
 7. Flask Modularization
     1. moving files.
     2. blueprints
-    3. logging
+    3. logging to a file
 8. Creating an Application
     1. Home page
     2. Designing the API with Stoplight Studio
