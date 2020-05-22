@@ -383,6 +383,39 @@ flask shell
 # This creates the database.
 ```
 
+### Adding Values
+
+In the flask shell:
+```python
+from app import Movie, db
+movie = Movie(title="The Mask")
+db.session.add(movie)
+db.session.commit()
+```
+
+### Querying Values
+
+```python
+from app import Movie
+movie = Movie.query.filter(Movie.title.like("%Mask%")).first()
+print(movie)
+```
+
+### Deleting Values
+
+```python
+from app import Movie, db
+movie = Movie.query.filter(Movie.title.like("%Mask%")).first()
+print(movie)
+db.session.delete(movie)
+db.session.commit()
+```
+
+### About SQL
+
+If you are new to SQL, I strongly recommend reading the first few sections
+of the `postgresql` documentation, linked in the resources section below.
+
 
 ## Free Resources
 
