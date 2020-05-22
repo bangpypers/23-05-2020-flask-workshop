@@ -65,8 +65,6 @@ will be published by Apress around December 2020.
     12. Dockerfile!
 
 
-
-
 ## Installation
 
 Make sure you install Python 3.6 or greater. Use Anaconda or Miniconda if you
@@ -137,6 +135,63 @@ Open [this page](http://localhost:5000) on your browser.
 
 The easiest way to read the final application is from the `app.py` file. The
 function `create_app` is your entrypoint into the application.
+
+
+## About Routes
+
+This section explains a bit about routes and queries.
+
+### Routes
+
+When you visit a URL you are probably used to seeing the `https://www.google.com/` portion of the website. Everything following the first `/` after the `.com` (this could be `.org` or `.in` or anything else) is the *route* for the page.
+
+For your site, when you visit `http://localhost/`, the default *route* is the
+*index*. This is `/`. We added a `/about` route, mapping a page to it.
+
+If you noticed in the first example, we *don't* need to return **html**
+content for a request. We can return anything, really.
+
+### Types of Routes
+
+#### GET
+
+The default type of request is *GET*. This can be interpreted literally.
+*Get* what I asked for.
+
+`http://localhost/` means *get the index route of http://localhost*.
+
+`http://localhost/about` means *get the about route of http://localhost*.
+
+
+### Data in routes
+
+Routes sometimes have meaningful data in them. A good analogy is to think
+of a route as a postal address.
+
+In API terms:
+
+```
+charlie
+road #42
+ChocolateFactory
+```
+
+could become:
+
+```/ChocolateFactory/road/42/charlie```
+
+Note that this does not follow any sort of standard on how APIs *should*
+look, but this is quite feasible.
+
+
+## About Queries
+
+A query is the *second* easiest way to pass data to a route. You have used
+queries millions of times without realizing it. Google uses a query to
+lead you to the search results: `https://www.google.com/search?q=how+do+I+use+google`.
+the `?q=...` portion is just a query where the API gets the values after `?`
+as an accessible string.
+
 
 ## Free Resources
 
