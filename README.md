@@ -48,3 +48,55 @@ pip install -r requirements.txt
 ```
 
 This is enough to get you setup for the workshop.
+
+
+## Using the Tags
+
+This repository will always have a `master` branch that is latest with the
+final state of the application. However, that will be daunting for anyone to
+read through. So, please make continuous use of the tags that I have put together
+to rewind to older states of the application.
+
+### Rewinding the App
+
+To rewind the app to a specific tag, use the following command:
+
+```bash
+git checkout v1.1
+```
+
+You can feel free to make changes or play around with the application.
+
+### Fast-forwarding the App
+
+Just checkout a later commit:
+
+```bash
+git checkout v1.9
+```
+
+The decimal portion of the application version will correspond to the agenda.
+
+
+## Reading the source code:
+
+The easiest way to read the final application is from the `app.py` file. The
+function `create_app` is your entrypoint into the application.
+
+## Free Resources
+
+1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
+2. [Flask Mega-tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+3. [Explore Flask](http://exploreflask.com/en/latest/)
+4. Git Tutorial [videos](https://git-scm.com/videos) [Pro-Git Book](https://git-scm.com/book/en/v2)
+5. Automate the Boring Stuff
+6. [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/)
+7. [SQL Tutorial on Postgres Documentation](https://www.postgresql.org/docs/10/tutorial.html)
+8. [Postman](https://www.postman.com/)
+9. [StopLight API Design Tool](https://stoplight.io/)
+10. [httpie Commandline tool](https://httpie.org/)
+
+## Contacting the Author
+
+Vinay goes by @stonecharioteer everywhere. [Twitter](https://twitter.com/stonecharioteer) is an easy way to reach
+him, or reddit, if you are brave enough.
