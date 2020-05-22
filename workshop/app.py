@@ -2,7 +2,7 @@
 from flask import (
     Flask, render_template, request, jsonify
     )
-
+import click
 
 
 def create_app(config=None, config_file=None):
@@ -31,4 +31,13 @@ def create_app(config=None, config_file=None):
     from .logger import setup_logging
     setup_logging(app)
     app.logger.info("app configured.")
+
+    @app.cli.command("load-data")
+    @click.argument("movies")
+    def load_data(movies):
+        """Use this command to load movies data from a csv file."""
+        from .data_loader import load_data
+        load_data(movies)
+        app.logger.debug("Movies loaded from {}".format(movies))
+
     return app
