@@ -107,6 +107,8 @@ function `create_app` is your entrypoint into the application.
 8. [Postman](https://www.postman.com/)
 9. [StopLight API Design Tool](https://stoplight.io/)
 10. [httpie Commandline tool](https://httpie.org/)
+11. [Real Python Decorators Tutorial](https://realpython.com/primer-on-python-decorators/)
+12. [Real Python Virtualenv Primer](https://realpython.com/python-virtual-environments-a-primer/)
 
 ## Contacting the Author
 
