@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content%}
+    <h1>Add Movie Page</h1>
+    <form method="POST" role="form">
+        <div class="form-group">
+          <label for="title">Movie Title</label>
+          <input type="text" class="form-control" name="title" id="title" aria-describedby="titleHelp" placeholder="Enter movie name">
+          <small id="titleHelp" class="form-text text-muted">Add any movie name.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+      </form>
+{% endblock%}

@@ -156,4 +156,20 @@ def load_data():
             db.session.add(movie)
         db.session.commit()
 
+
+@app.route("/add", methods=["GET", "POST"])
+def add_movie():
+    """route to add movie"""
+    if request.method == "GET":
+        return render_template("add.html")
+    else:
+        title = request.form.get("title")
+        movie = Movie(title=title)
+        db.session.add(movie)
+        db.session.commit()
+        response = {
+            "success": True,
+            "id": movie.id_
+        }
+        return jsonify(response)
 app.run(debug=True)
