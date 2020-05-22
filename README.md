@@ -18,14 +18,53 @@ will be published by Apress around December 2020.
 
 ## Agenda
 
-1. Quick Introduction to Decorators
-2. Introduction to Flask
-3. Adding Routes
-4. Debugging Flask with VS Code
-5. Flask Modularization
-6. Adding a Database
-7. Creating a Front End
-8. Managing a Large Application
+1. Basics
+    1. Decorators and Getting Started
+    2. Add HTML to the content of the home page.
+    3. Move HTML to a template page.
+    4. Add a second page.
+    5. Modularize both pages.
+2. Routes
+    1. Routes and JSONs
+    2. GET
+    3. Using Postman
+    4. POST
+    5. PUT
+    6. DELETE
+3. Debugging with VS Code.
+    1. Adding a `launch.json` file
+4. Adding a Database
+    1. flask-sqlalchemy
+    2. db.Model example table
+    3. Adding a second table.
+5. Flask shell
+    1. Using flask-shell to debug.
+    2. Adding values to the database.
+    3. Quering values
+    4. Removing values from the database.
+6. Front-End
+    1. Adding Bootstrap CSS.
+    2. Adding a simple template.
+    3. A simple form.
+7. Flask Modularization
+    1. moving files.
+    2. loading database later.
+    3. logging
+8. Creating an Application
+    1. Home page
+    2. Designing the API with Stoplight Studio
+    3. Adding tables.
+    4. Adding API routes
+    5. Adding helper command to `flask` CLI to load data.
+    6. Movie display page.
+    7. Adding javascript for `onClick`
+    8. Adding a \user\selected page to display all the selections
+    9. Logging to a file
+    10. Running with gunicorn (linux and mac only)
+    11. Writing tests with pytest-flask
+    12. Dockerfile!
+
+
 
 
 ## Installation
@@ -54,6 +93,11 @@ This repository will always have a `master` branch that is latest with the
 final state of the application. However, that will be daunting for anyone to
 read through. So, please make continuous use of the tags that I have put together
 to rewind to older states of the application.
+
+### Listing all Tags
+
+To list all tags: `git tag -l -n9`
+
 
 ### Rewinding the App
 
