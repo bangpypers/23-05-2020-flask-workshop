@@ -116,11 +116,15 @@ The decimal portion of the application version will correspond to the agenda.
 
 ## Running the App
 
-From v0.4.x, the way you run the app is a very simple operation.
+From v0.7.x, the app should be run using the `wsgi.py` file. WSGI stands for
+Web Server Gateway Interface. Flask apps should not be run in production
+using `flask run`. And they should not rest in one file. A modular approach
+ensures that all the modules are easy to debug, and the history is isolated to
+separate files.
 
 ```bash
 
-export FLASK_APP=app.py
+export FLASK_APP=wsgi.py
 export FLASK_DEBUG=1
 # windows users,
 # use SET instead of EXPORT
@@ -416,6 +420,14 @@ db.session.commit()
 If you are new to SQL, I strongly recommend reading the first few sections
 of the `postgresql` documentation, linked in the resources section below.
 
+
+## Modularization
+
+A flask app becomes more complex as it grows. This is when you should break
+it up so that your logic becomes easier to debug.
+
+The `v0.7.x` tags show how to split the previous application into several
+modules.
 
 ## Free Resources
 
