@@ -85,6 +85,10 @@ In v0.1.1, the way you run the app is a very simple operation.
 python decorators.py
 # then continue to the app.
 python app.py
+
+# The ideal way of running this application now is
+FLASK_APP=app.py flask run
+
 ```
 
 Open [this page](http://localhost:5000) on your browser.
