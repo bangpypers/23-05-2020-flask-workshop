@@ -196,9 +196,41 @@ content for a request. We can return anything, really.
 The default type of request is *GET*. This can be interpreted literally.
 *Get* what I asked for.
 
-`http://localhost/` means *get the index route of http://localhost*.
+`http://localhost:5000/` means *get the index route of http://localhost*.
 
-`http://localhost/about` means *get the about route of http://localhost*.
+`http://localhost:5000/about` means *get the about route of http://localhost*.
+
+
+#### POST
+
+A POST is a different type of request. When a client (this is a browser or
+a script such as what I will show you now) sends a POST, it is usually from
+an internal function and never from the URL in a browser. The address bar
+always performs a *GET*.
+
+To try out our sample API for POST:
+
+```bash
+http POST :5000/post-example
+# httpie allows you to just skip the http://localhost part of the URL nicely.
+```
+
+Output:
+
+```
+HTTP/1.0 200 OK
+Content-Length: 107
+Content-Type: application/json
+Date: Fri, 22 May 2020 17:51:29 GMT
+Server: Werkzeug/1.0.1 Python/3.8.3
+
+{
+    "null_value": null,
+    "some_number": 34298,
+    "string_sample": "flask is fun!",
+    "success": true
+}
+```
 
 
 ### Data in routes
