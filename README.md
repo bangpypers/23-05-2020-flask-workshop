@@ -38,7 +38,7 @@ will be published by Apress around December 2020.
 5. Flask shell
     1. Using flask-shell to debug.
     2. Adding values to the database.
-    3. Quering values
+    3. Querying values
     4. Removing values from the database.
 6. Front-End
     1. Adding Bootstrap CSS.
@@ -60,14 +60,13 @@ will be published by Apress around December 2020.
     9. Logging to a file
     10. Running with gunicorn (linux and mac only)
     11. Writing tests with pytest-flask
-    12. Dockerfile!
+    12. [BONUS] Dockerfile!
 
 
 ## Installation
 
 Make sure you install Python 3.6 or greater. Use Anaconda or Miniconda if you
 don't know how.
-
 
 Then follow these steps.
 
@@ -142,7 +141,6 @@ Note: Ensure you have installed httpie using:
 ```bash
 pip install -r requirements.txt
 ```
-
 
 The output I get is:
 ```
@@ -360,6 +358,11 @@ the `?q=...` portion is just a query where the API gets the values after `?`
 as an accessible string.
 
 
+## Running the VS Code Debugger
+
+The [Official docs for VS Code](https://code.visualstudio.com/docs/python/tutorial-flask#_run-the-app-in-the-debugger) cover how to use the debugger nicely.
+
+
 ## Free Resources
 
 1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
@@ -377,5 +380,6 @@ as an accessible string.
 
 ## Contacting the Author
 
-Vinay goes by @stonecharioteer everywhere. [Twitter](https://twitter.com/stonecharioteer) is an easy way to reach
+Vinay goes by @stonecharioteer everywhere.
+[Twitter](https://twitter.com/stonecharioteer) is an easy way to reach
 him, or reddit, if you are brave enough.
