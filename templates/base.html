@@ -5,18 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="BangPypers Flask Workshop">
+    <meta name="author" content="Vinay Keerthi">
     <title>Flask Application</title>
     <!-- Bootstrap -->
     <link href="{{ url_for('static', filename='bootstrap-3.3.7-dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='custom.css') }}" rel="stylesheet">
 
 </head>
 <body>
-    {% block content %}
-    {#
-    This is called jinja. It is a fancy syntax that is common in many
-    languages that allow you to make front ends this way.
-    #}
-    {% endblock %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+              <li><a href="{{ url_for('about_page') }}">About</a></li>
+              <li><a href="{{ url_for('search_page') }}">Search</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <div class="container">
+
+        <div class="starter-template">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+      </div><!-- /.container -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{ url_for('static', filename='bootstrap-3.3.7-dist/js/jquery_1.12.3.min.js')}}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
