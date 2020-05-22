@@ -145,4 +145,15 @@ class User(db.Model):
     def __repr__(self):
         return "<Movie: #{} - {}>".format(self.id_, self.name)
 
+
+def load_data():
+    """Helper function to load data using flask shell"""
+    import csv
+    with open("movies.csv") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            movie = Movie(title=row["title"])
+            db.session.add(movie)
+        db.session.commit()
+
 app.run(debug=True)
