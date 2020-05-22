@@ -1,5 +1,4 @@
 #/usr/bin/env python3
-
 from flask import (
     Flask, render_template, request, jsonify
     )
@@ -90,7 +89,7 @@ def combined_route():
             "number": 1,
         }
     else:
-        payload = request.json.get("id")
+        payload = request.form.get("id")
         if request.method == "POST":
             response = {
            "message": "You posted something",
