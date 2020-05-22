@@ -127,7 +127,7 @@ In v0.1.x, the way you run the app is a very simple operation.
 ```bash
 python app.py
 # OR
-FLASK_APP=app.py flask run
+FLASK_APP=app.py FLASK_DEBUG=1 flask run
 ```
 
 Open [this page](http://localhost:5000) on your browser.
