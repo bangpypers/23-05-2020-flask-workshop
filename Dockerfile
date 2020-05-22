@@ -10,4 +10,9 @@ RUN pip install gunicorn
 
 COPY . /flask-workshop
 
-CMD ["gunicorn", "-w", "4", "wsgi:app"]
+EXPOSE 5000
+
+ENV FLASK_APP wsgi.py
+RUN ["flask", "load-data", "movies.csv"]
+
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "wsgi:app"]
