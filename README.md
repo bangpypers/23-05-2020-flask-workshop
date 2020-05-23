@@ -446,8 +446,8 @@ developers how you wanted to design the API at a later point.
 
 Here are some screenshots.
 
-![Stoplight-1](screenshots/05_stoplight.png)
-![Stoplight-2](screenshots/05_stoplight_endpoint.png)
+![Stoplight-1](screenshots/03_stoplight.png)
+![Stoplight-2](screenshots/06_stoplight_endpoint.png)
 
 Take a look at the `swagger.yml` file to know more.
 
