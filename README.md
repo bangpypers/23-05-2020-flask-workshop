@@ -474,6 +474,9 @@ To run:
 docker run --rm --name workshop -p 5000:5000 workshop
 ```
 
+## Youtube link for the talk (added post-talk) - 
+[https://www.youtube.com/watch?v=1C7Oj0KEhgo]
+
 ## Free Resources
 
 1. [Flask Website](https://flask.palletsprojects.com/en/1.1.x/)
