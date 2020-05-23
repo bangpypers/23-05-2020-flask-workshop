@@ -68,7 +68,7 @@ Then follow these steps.
 git clone https://github.com/bangpypers/23-05-2020-flask-workshop.git
 cd 23-05-2020-flask-workshop
 python -m venv env
-source env/bin/activate # use just env\bin\activate.bat for Windows
+source env/bin/activate # use just env\Scripts\activate.bat for Windows
 pip install -r requirements.txt
 ```
 
