@@ -499,16 +499,7 @@ Vinay goes by @stonecharioteer everywhere.
 [Twitter](https://twitter.com/stonecharioteer) is an easy way to reach
 him, or reddit, if you are brave enough.
 
-
-## Contacting the Author
-
-Vinay goes by @stonecharioteer everywhere.
-[Twitter](https://twitter.com/stonecharioteer) is an easy way to reach
-him, or reddit, if you are brave enough.
-
 As requested by the audience, here are a few photos and details.
-
-
 
 ### Uses
 
