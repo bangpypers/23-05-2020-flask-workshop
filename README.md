@@ -494,3 +494,51 @@ docker run --rm --name workshop -p 5000:5000 workshop
 Vinay goes by @stonecharioteer everywhere.
 [Twitter](https://twitter.com/stonecharioteer) is an easy way to reach
 him, or reddit, if you are brave enough.
+
+
+## Contacting the Author
+
+Vinay goes by @stonecharioteer everywhere.
+[Twitter](https://twitter.com/stonecharioteer) is an easy way to reach
+him, or reddit, if you are brave enough.
+
+As requested by the audience, here are a few photos and details.
+
+
+
+### Uses
+
+Vinay has been using Linux Mint for over 14 years now, and he swears by
+it. His current window manager is Cinnamon, but he mostly lives in the
+terminal. He uses ZSH, and this is
+[the gist](https://gist.github.com/stonecharioteer/8ec324a64e090960fff1804ba6170c8a)
+containing his dotfiles, including his VSCode settings.json.
+
+He loves assembling Mechanical Keyboards. He owns a Daisy 40%, a hand-soldered
+Lily58 Split and a hand-soldered Corne Keyboard. His current favourite is
+undoubtedly the Corne.
+
+
+### Photos
+
+#### Subbi
+
+![Subbi](photos/subbi.jpg)
+
+#### Keyboard and Workspace
+
+##### Workspace
+
+![Workspace](photos/workspace.jpg)
+
+##### Corne Keyboard (Cherry MX Blue)
+
+![CorneKeyboard](photos/corne_keyboard.jpg)
+
+##### Daisy 40% (Cherry MX Green)
+
+![Workspace](photos/daisy_keyboard.jpg)
+
+##### Lily58 Keyboard (Cherry MX Blue)
+
+![Lily58](photos/lily58_keyboard.jpg)
