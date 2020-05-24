@@ -473,8 +473,8 @@ To run:
 ```bash
 docker run --rm --name workshop -p 5000:5000 workshop
 ```
-## Youtube link for the talk (added post-talk)
 
+## Youtube link for the talk (added post-talk) - 
 [https://www.youtube.com/watch?v=1C7Oj0KEhgo]
 
 ## Free Resources
@@ -491,6 +491,12 @@ docker run --rm --name workshop -p 5000:5000 workshop
 10. [httpie Commandline tool](https://httpie.org/)
 11. [Real Python Decorators Tutorial](https://realpython.com/primer-on-python-decorators/)
 12. [Real Python Virtualenv Primer](https://realpython.com/python-virtual-environments-a-primer/)
+
+## Contacting the Author
+
+Vinay goes by @stonecharioteer everywhere.
+[Twitter](https://twitter.com/stonecharioteer) is an easy way to reach
+him, or reddit, if you are brave enough.
 
 
 ## Contacting the Author
