@@ -474,8 +474,9 @@ To run:
 docker run --rm --name workshop -p 5000:5000 workshop
 ```
 
-## Youtube link for the talk (added post-talk) - 
-[https://www.youtube.com/watch?v=1C7Oj0KEhgo]
+## Youtube link for the talk (added post-talk)
+
+[Watch on youtube here](https://www.youtube.com/watch?v=1C7Oj0KEhgo)
 
 ## Free Resources
 
